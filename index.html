@@ -1,4 +1,5 @@
- <!DOCTYPE html>
+```html
+<!DOCTYPE html>
 <html lang="en">
 <head>
 
@@ -8,9 +9,7 @@
 <title>RISHI GOWDA | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 <style>
@@ -95,6 +94,7 @@ cursor:pointer;
 color:white;
 }
 
+/* HERO */
 .hero{
 min-height:100vh;
 display:flex;
@@ -152,6 +152,7 @@ border-radius:18px;
 padding:32px;
 }
 
+/* SKILLS */
 .skills{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
@@ -180,6 +181,32 @@ background:linear-gradient(90deg,var(--accent),var(--accent2));
 transition:1.5s;
 }
 
+/* CERTIFICATIONS */
+.cert-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:24px;
+}
+
+.cert-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:12px;
+margin-bottom:12px;
+}
+
+.cert-card h3{
+font-size:1.1rem;
+margin-bottom:5px;
+}
+
+.cert-card p{
+font-size:.85rem;
+color:var(--muted);
+}
+
+/* CONTACT */
 .contact-item{
 display:flex;
 justify-content:center;
@@ -189,6 +216,7 @@ color:var(--muted);
 text-decoration:none;
 }
 
+/* FEEDBACK */
 .feedback-form{
 display:grid;
 gap:12px;
@@ -238,115 +266,105 @@ color:var(--muted);
 <div id="particles-js"></div>
 
 <nav class="navbar">
-
 <div class="nav-container">
-
 <div class="logo">My Portfolio</div>
 
 <div class="nav-links">
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
+<a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
 <a href="#feedback">Feedback</a>
 </div>
 
 <button id="themeToggle">🌙</button>
-
 </div>
-
 </nav>
 
+<!-- HERO -->
 <section class="hero" id="home">
-
 <div class="container">
-
-<img src="rishi.jpg">
-
-<h1>Hi, I'm <span>RISHI GOWDA</span></h1>
-
+<img src="images/rishi.jpg.jpg">
+<h1>Hi, I'm <span>RISHIB GOWDA M</span></h1>
 <p>BCA Student</p>
-
-<div class="tagline">AI • Python • Cloud Computing</div>
-
+<div class="tagline">• CLOUD COMPUTING • Python • HTML</div>
 </div>
-
 </section>
 
+<!-- ABOUT -->
 <section id="about">
-
 <div class="container card">
-
 <h2 class="section-title">About Me</h2>
-
 <p>I am Rishi Gowda, a BCA student passionate about Artificial Intelligence and technology.</p>
-
 <p>I enjoy learning Python, Cloud Computing and Web Development.</p>
-
 <p>My goal is to build AI applications and become a professional AI developer.</p>
-
 </div>
-
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
-
 <div class="container">
-
 <h2 class="section-title">Technical Skills</h2>
-
 <div class="skills">
 
 <div class="card">
+<div class="skill-title"><span>Python</span><span>80%</span></div>
+<div class="progress"><div class="fill" data="80"></div></div>
 
-<div class="skill-title">
-<span>Python</span>
-<span>80%</span>
-</div>
+<div class="skill-title"><span>HTML</span><span>90%</span></div>
+<div class="progress"><div class="fill" data="90"></div></div>
 
-<div class="progress">
-<div class="fill" data="80"></div>
-</div>
+<div class="skill-title"><span>CSS</span><span>85%</span></div>
+<div class="progress"><div class="fill" data="85"></div></div>
 
-<div class="skill-title">
-<span>HTML</span>
-<span>90%</span>
-</div>
-
-<div class="progress">
-<div class="fill" data="90"></div>
-</div>
-
-<div class="skill-title">
-<span>CSS</span>
-<span>85%</span>
-</div>
-
-<div class="progress">
-<div class="fill" data="85"></div>
-</div>
-
-<div class="skill-title">
-<span>Cloud Computing</span>
-<span>70%</span>
-</div>
-
-<div class="progress">
-<div class="fill" data="70"></div>
+<div class="skill-title"><span>Cloud Computing</span><span>70%</span></div>
+<div class="progress"><div class="fill" data="70"></div></div>
 </div>
 
 </div>
-
 </div>
-
-</div>
-
 </section>
 
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+<div class="container">
+<h2 class="section-title">Certifications</h2>
+
+<div class="cert-grid">
+
+<div class="card cert-card">
+<a href="images/cert1.jpg.jpeg" target="_blank">
+<img src="images/cert1.jpg.jpeg">
+</a>
+<h3>Digital Engineering Certification</h3>
+<p>Issued by NASSCOM Platform</p>
+</div>
+
+<div class="card cert-card">
+<a href="images/cert2.jpg.jpeg" target="_blank">
+<img src="images/cert2.jpg.jpeg">
+</a>
+<h3>Front End Web Developer Certification</h3>
+<p>Issued by Infosys </p>
+</div>
+
+<div class="card cert-card">
+<a href="images/cert3.jpg.jpeg" target="_blank">
+<img src="images/cert3.jpg.jpeg">
+</a>
+<h3>The Complete Git Guide</h3>
+<p>Issued by Udemy</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
 <section id="contact">
-
 <div class="container card">
-
 <h2 class="section-title">Contact</h2>
 
 <a class="contact-item" href="mailto:rishishreeo07@gmail.com">
@@ -358,56 +376,41 @@ color:var(--muted);
 </a>
 
 </div>
-
 </section>
 
+<!-- FEEDBACK -->
 <section id="feedback">
-
 <div class="container card">
-
 <h2 class="section-title">Feedback</h2>
 
 <form class="feedback-form" id="feedbackForm">
-
 <input type="text" id="name" placeholder="Your Name" required>
-
 <input type="email" id="email" placeholder="Your Email" required>
-
 <textarea rows="4" id="message" placeholder="Your Feedback" required></textarea>
-
 <button type="submit">Submit Feedback</button>
-
 </form>
 
 <p id="status"></p>
 
 </div>
-
 </section>
 
 <footer>
-
 © 2026 RISHI GOWDA
-
 </footer>
 
 <script>
 
+// SKILL ANIMATION
 window.addEventListener("scroll",()=>{
-
 document.querySelectorAll(".fill").forEach(b=>{
-
 if(b.getBoundingClientRect().top < window.innerHeight-120)
-
 b.style.width=b.getAttribute("data")+"%";
-
+});
 });
 
-});
-
-
+// FEEDBACK
 document.getElementById("feedbackForm").addEventListener("submit", async function(e){
-
 e.preventDefault();
 
 const name=document.getElementById("name").value;
@@ -415,48 +418,29 @@ const email=document.getElementById("email").value;
 const message=document.getElementById("message").value;
 
 try{
-
 const res=await fetch("http://localhost:5000/contact",{
-
 method:"POST",
-headers:{
-"Content-Type":"application/json"
-},
-
-body:JSON.stringify({
-name:name,
-email:email,
-message:message
-})
-
+headers:{"Content-Type":"application/json"},
+body:JSON.stringify({name,email,message})
 });
 
 const data=await res.text();
-
 document.getElementById("status").innerText="✅ "+data;
-
-document.getElementById("feedbackForm").reset();
+this.reset();
 
 }catch(err){
-
 document.getElementById("status").innerText="❌ Error sending feedback";
-
 }
-
 });
 
-
+// THEME
 const toggle=document.getElementById("themeToggle");
-
 toggle.addEventListener("click",()=>{
-
 document.body.classList.toggle("light-mode");
-
 toggle.innerHTML=document.body.classList.contains("light-mode")?"☀️":"🌙";
-
 });
 
-
+// PARTICLES
 particlesJS("particles-js",{
 particles:{
 number:{value:80},
@@ -471,3 +455,4 @@ move:{speed:2}
 
 </body>
 </html>
+```
